@@ -33,11 +33,11 @@ app.get("/success.hbs",(req,res)=>{
 app.get("/wardenlogin.hbs",(req,res)=>{
     res.render("wardenlogin")
 })
-app.get("/wardendisplay.hbs",(req,res)=>{
+app.get("/wardendisplay",(req,res)=>{
     res.render("wardendisplay")
 })
 app.get('/getdata',(req,res)=>{
-    res.send("Hello");
+    res.json({message:"svjsdnf"});
 })
 app.post("/registrationform.hbs",async(req,res)=>{
     const data={
